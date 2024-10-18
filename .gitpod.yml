@@ -1,0 +1,6 @@
+tasks:
+  - init: |
+      pip install robotframework robotframework-seleniumlibrary
+      pip install robotframework-browser
+    command: |
+      robot testsuite.robot
