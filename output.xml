@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1 (Python 3.12.6 on linux)" generated="2024-10-18T04:40:31.178029" rpa="false" schemaversion="5">
+<suite id="s1" name="Testsuite" source="/workspace/Automation/robotframework_project/testsuite.robot">
+<kw name="Open Browser To Login Page" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-10-18T04:40:31.355968" level="INFO">Opening browser 'chrome' to base url 'https://example.com/login'.</msg>
+<msg time="2024-10-18T04:40:36.629441" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg time="2024-10-18T04:40:36.629656" level="FAIL">ProtocolError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))</msg>
+<arg>${LOGIN URL}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="FAIL" start="2024-10-18T04:40:31.355670" elapsed="5.283724">ProtocolError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))</status>
+</kw>
+<status status="FAIL" start="2024-10-18T04:40:31.354895" elapsed="5.284733">ProtocolError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))</status>
+</kw>
+<test id="s1-t1" name="Login With Valid Credentials" line="10">
+<doc>Valid login with correct credentials.</doc>
+<status status="FAIL" start="2024-10-18T04:40:36.639760" elapsed="0.000505">Parent suite setup failed:
+ProtocolError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))</status>
+</test>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-10-18T04:40:36.641047" elapsed="0.000172"/>
+</kw>
+<status status="FAIL" start="2024-10-18T04:40:31.178940" elapsed="5.462334">Suite setup failed:
+ProtocolError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))</status>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Testsuite">Testsuite</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
